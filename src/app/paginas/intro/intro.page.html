@@ -1,0 +1,21 @@
+<ion-content padding>
+
+  <ion-slides pager="true" [options]="slideOpts" >
+
+    <ion-slide *ngFor="let slide of slides"> 
+      <ion-icon slot="start" name="close" (click)="terminar()"></ion-icon>
+     <img src="../../assets/img/logo.png" alt="">
+     <h1>{{slide.title}}</h1>
+     <h2>{{slide.subtitle}}</h2>
+     <p>
+      {{slide.descripcion}}
+     </p>
+     <ion-icon  name="{{slide.icono}}"></ion-icon>
+   </ion-slide>
+
+   
+  
+   
+ </ion-slides>
+ 
+</ion-content>
